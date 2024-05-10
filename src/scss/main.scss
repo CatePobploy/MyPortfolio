@@ -1,0 +1,566 @@
+@use "./abstracts/" as *;
+
+body {
+  font-family: $bodyFont;
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   #845ec2,
+  //   #a55dbd,
+  //   #c15db5,
+  //   #d95fab,
+  //   #ec64a0,
+  //   #f66b93,
+  //   #fc7587,
+  //   #ff807d,
+  //   #ff8f72,
+  //   #ffa168,
+  //   #ffb461,
+  //   #ffc75f
+  // );
+  background-color: antiquewhite;
+  background-color: #3D404C;
+}
+
+// body {
+//   font-family: $bodyFont;
+//   background-color: #2c2c2d
+//   ;
+// }
+
+// .BGgeneral {
+//   background-image: var(--complementarySkew);
+// }
+
+p {
+  font-family: $bodyFont;
+  color: whitesmoke;
+}
+
+.light {
+  background-color: $primary;
+  color: $complementarySkew;
+}
+
+.dark {
+  background-color: $complementarySkew;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.bg-body{
+  background-color: #7e61e7;
+}
+
+.appContent {
+  margin: 1rem auto;
+  flex: 1;
+}
+
+#hero-section {
+  margin: 1rem auto;
+  padding: 2rem 10rem;
+
+  h1 {
+    font-weight: bolder;
+    font-size: 4em;
+    margin: 2rem 0;
+  }
+
+  p {
+    margin: 1.5rem 0;
+  }
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: $primary;
+  background-color: $complementarySkew;
+}
+
+/* NEW CSS - SOLUTION TO CSS CHALLENGES */
+/* A. BUTTON COMPONENT */
+// Nesting .homeBtn and .linkBtn styles
+.homeBtn,
+.linkBtn {
+  display: inline-block;
+  margin: 0px auto;
+  width: 150px;
+  border-radius: 10px;
+  padding: 0.8rem;
+  color: $primary;
+  background: rgb(29, 140, 148);
+  background: linear-gradient(45deg, $brandSkew 0%, $brand 100%);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  border-width: thick;
+
+  // Nesting hover styles
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    border-width: thick;
+  }
+
+  // Nesting focus styles
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(29, 140, 148, 0.4);
+  }
+
+  // Nesting active styles
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.homeBtn:hover,
+.linkBtn:hover {
+  color: #444040;
+
+  background: linear-gradient(225deg, $brandSkew 0%, $brand 100%);
+  transform: scale(1.01);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.linkBtn {
+  background-image: linear-gradient(
+    to right bottom,
+    #845ec2,
+    #a55dbd,
+    #c15db5,
+    #d95fab,
+    #ec64a0,
+    #f66b93,
+    #fc7587,
+    #ff807d,
+    #ff8f72,
+    #ffa168,
+    #ffb461,
+    #ffc75f
+  ) !important;
+  text-align: center;
+  border-width: thick;
+
+}
+
+a.linkBtn {
+  width: 280px;
+}
+
+a{
+  border-color: white;
+  border-width: thick;
+}
+
+.homeBtn #btn-icon {
+  font-size: 1.5em;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* B. NAVBAR COMPONENT */
+.navbar {
+  background: $complementary;
+  color: $primary;
+  font-family: "FEAR Logo";
+
+  .nav-link {
+    cursor: pointer;
+    margin: 10px !important;
+
+  }
+  // .nav-link:hover{
+  //   color: #FF52A2 !important;
+  //  }
+
+  .nav-link {
+    background: linear-gradient(90dge, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: relative;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: $primary;
+  }
+
+  .navbar:hover,
+  .navbar .nav-link:hover {
+    color: aqua;
+    width: 100%;
+    opacity: 1;
+    border-bottom: solid;
+  }
+}
+
+/* C. NOT FOUND PAGE */
+.notFoundWrapper {
+  margin: 4rem 0;
+  text-align: center;
+
+  .notFoundCover img {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+/* D. ACCORDION COMPONENT */
+/* YOUR CSS HERE :) */
+/* D. ACCORDION COMPONENT */
+/* HOME */
+#hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%;
+  z-index: 3;
+}
+
+.hero-title{
+  color: $primary;
+  font-family: "Game Of Squids";
+  font-size: 5em;
+}
+.aboutMe {
+  color:  #ffff !important;
+  border: #ffc75f;
+  font-family: "Game Of Squids";
+  font-size: 5em;
+}
+
+
+.hero-subtitle {
+  color: $primary;
+  font-family: "FEAR Logo";
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.myp{
+  width: 1200px;
+  height: 200px;
+}
+
+
+
+.video-overlay {
+  position: absolute;
+  top: 80px; //58 with line
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  z-index: 0;
+  margin: none;
+}
+
+//bbb//
+
+.video-overlay3 {
+  position: absolute;
+  top: 56px; //58 with line
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5); /* Adjust opacity as needed */
+  z-index: 0;
+}
+
+.video-overlay2 {
+  position: absolute;
+  top: 290px;
+  left: 65%;
+  width: 30%;
+  height: 60%;
+  background-color: rgba(38, 37, 37, 0.5); /* Adjust opacity as needed */
+  z-index: 0;
+  transform: translate(-55%, -50%);
+  border-radius: 110px;
+}
+
+.mp{
+  margin-bottom: 2rem;
+}
+
+.left-section {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  transform: translateY(-50%);
+  max-width: 50%; 
+  padding: 0 20px;
+  z-index: 2;
+  color: $primary;
+}
+
+.left-section .hero-title {
+  font-size: 4em;
+  margin: 2rem 0;
+}
+
+.left-section .hero-subtitle {
+  font-size: 1.6rem;
+}
+/// ccc
+
+.container {
+  display: inline-block;
+  padding-left: 6.5rem !important;
+  padding-right: 5.5rem !important;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid $primary;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) forwards, blinking 0.8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: $primary;
+  }
+}
+//aboutMe2
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 2rem;
+}
+
+// .hero-container::after,
+// .hero-container::before {
+//   content: " ";
+//   width: 28.125rem;
+//   height: 28.125rem;
+//   border-radius: 28.125rem;
+//   background: linear-gradient(45deg, $brandSkew2 0%, $brand 100%);
+//   position: absolute;
+//   z-index: -1;
+//   filter: blur(125px);
+// }
+
+.hero-container::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.hero-container::before {
+  bottom: 2rem;
+  right: 0rem;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hero-content h2 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  // margin-top: 5rem;
+  flex: 1;
+}
+
+.project-description {
+  font-size: 6px;
+}
+
+.tech-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.heroImage > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+}
+
+.tech-icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.65rem;
+  border: 1.5px solid snow;
+  padding: 6px;
+}
+
+.tech-icon img {
+  width: 3rem;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.tech-icon > img {
+  width: 100%;
+  height: auto;
+}
+
+.cate {
+  border-radius: 45px;
+  height: 40rem;
+}
+
+.tech-icon:hover {
+  translate: translateY(-0.5rem) !important;
+}
+.cate:hover {
+  transform: translateY(-0.5rem);
+}
+
+//project Section
+.projects-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.projects-heading {
+  font-family: "Game Of Squids";
+  font-size: 5em;
+  font-weight: bold;
+  color: $primary; /* White color */
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-family: $bodyFont;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* White color */
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-family: $bodyFont;
+  font-size: 1.2rem;
+  color: #ffffff; /* White color */
+  line-height: 1.6;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.linkBtn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  font-family: $bodyFont;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $primary;
+  background-color: $brand;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.linkBtn:hover {
+  background-color: $brandSkew;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+  }
+}
+
+.mail {
+  color: #ffc75f;
+  text-decoration: none;
+}
+
+.mail:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+$bodyFont: "Open Sans", apple-system, sans-serif;
+
+/* COLOR SHEET: https://tailwindcss.com/docs/customizing-colors */
+$primary: #ffffff;
+$complementary: #111827; /* TAILWIND: GRAY 900 */
+$complementarySkew: #212529;
+$highlight: #9ca3af; /* TAILWIND: GRAY 400 */
+$brand: #e94ce6; /* TAILWIND: BLUE 400 */
+$brandSkew: #818cf8; /* TAILWIND: INDIGO 400 */
+$brandSkew2: #5e68c2;
+$success: #16a34a; /* TAILWIND: GREEN 600 */
+$error: #dc2626; /* TAILWIND: RED 600 */
+$secondary: #e94ce6; /* Assuming this is a custom variable */

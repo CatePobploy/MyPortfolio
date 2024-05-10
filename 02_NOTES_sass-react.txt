@@ -1,0 +1,35 @@
+[5.1] SASS INTEGRATION
+
+PURPOSE OF 02 FILE: INTEGRATION WITH SASS
+  - Integrate with CLI SASS Compiler with Vite (https://vitejs.dev/guide/features#css-pre-processors)
+  - If curious regarding VSCode Extension Compiler (https://github.com/glenn2223/vscode-live-sass-compiler/blob/HEAD/docs/faqs.md)
+
+  - IMPORTANT: It is important to note that in industry, if working with SASS, you are far more likely to work with the NODE COMPILER ("npm i sass") than the VSCODE EXTENSION! 
+
+STEPS TO INTEGRATE:
+  (a) Setup of Compiler with CLI 
+    - In terminal, inside client folder, install Dart Sass Compiler: "npm i sass" 
+      -> IMPORTANT NOTE: "node-sass" is the DEPRECATED version.  Much like the OLD compiler, "node-sass" is NOT the up-to-date version of SASS and SHOULD BE AVOIDED!
+      -> "Dart SASS" is installed using this "sass" command!
+
+  (b) Link scss files to the Application 
+    - We will rename our "index.css" file to "main.scss" 
+    - Place the "main.scss" file into a "sass" directory 
+    - Update index.js to include "sass/main.scss" rather than the old file 
+
+    NOTE: The CLI compiler does all the magic BEHIND THE SCENES, so we can actually link the scss file directly to the application, and the bundlers  will compile the .scss file as it publishes the React client!
+      -> NO NEED to setup workspaces OR have a separate CSS folder (but can be useful in DEV to have as below)
+
+  (c) Configure CLI Sass Scripts
+    - We should setup our watch & build scripts for sass, to ensure it is configured to our requirements = we will still output the .scss to a separate .css file, just in DEV to ensure changes are tracked correctly:
+
+      -> watch:sass - This will act like the watch mode of the VSCode compiler and compile any changes live + compile to a CSS file we can view 
+      -> build:sass - This will do a one-time build & compile to a location, so we could then export just the CSS file for deployment 
+
+      -> SEE HERE for DOCS: https://sass-lang.com/documentation/cli/dart-sass
+
+  (d) Test LIVE React client 
+    - Start up React and test the compiled CSS has been applied correctly, both directly with compiled CSS file & raw SCSS file in index.js
+
+      
+  + CHALLENGE 1: Adapt main.scss into using basic nesting & variables (no modules for the moment!)
