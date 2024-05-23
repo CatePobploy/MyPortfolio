@@ -2,15 +2,20 @@
 /* COLOR SHEET: https://tailwindcss.com/docs/customizing-colors 
 
 */
-
+/* 
 @font-face {
   font-family: 'Game Of Squids';
   src: url('fonts/Game Of Squids.woff2') format('woff2'),
        url('fonts/Game Of Squids.woff') format('woff');
-  /* Add additional src lines for other font file formats if available */
+
   font-weight: normal;
   font-style: normal;
 }
+
+
+.my-font {
+  font-family: 'MyFont', Fallback, sans-serif;
+} */
 
 :root {
   --primary: #ffffff;
@@ -29,8 +34,6 @@ body {
   background: var(--primary);
   box-sizing: border-box;
 }
-
-
 
 .app {
   text-align: center;
@@ -124,4 +127,3 @@ footer {
   max-width: 600px;
   margin: auto;
 }
-
