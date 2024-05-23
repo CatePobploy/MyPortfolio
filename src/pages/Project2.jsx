@@ -3,14 +3,12 @@ import MOUNTAINGALLERY from "../assets/MOUNTAINGALLERY.svg";
 import EveySweetHub from "../assets/EveySweetHub.svg";
 import VerseVoyage from "../assets/VerseVoyage.png";
 import "../css/bootstrap.min.css";
-import PokeFarmDisplay from "../assets/PokeFarmDisplay.svg"
-import PokeFarmDisplayLight1 from "../assets/PokeFarmDisplayLight1.svg"
-import PokeFarmDisplayLight2 from "../assets/PokeFarmDisplayLight2.svg"
+import PokeFarmDisplay from "../assets/PokeFarmDisplay.svg";
+import PokeFarmDisplayLight1 from "../assets/PokeFarmDisplayLight1.svg";
+import PokeFarmDisplayLight2 from "../assets/PokeFarmDisplayLight2.svg";
 import verseVoyage from "../assets/verseVoyage.svg";
-import myp from "../assets/myp.svg"
-import church from "../assets/church.svg"
-
-
+import myp from "../assets/myp.svg";
+import church from "../assets/church.svg";
 
 import React from "react";
 
@@ -38,7 +36,6 @@ function GalleryPage() {
                     className="img-fluid jarallax-img myp"
                     id="myproject"
                   /> */}
-
 
         <section id="about-us2">
           <div className="container-fluid">
@@ -164,7 +161,7 @@ function GalleryPage() {
                       </svg>
                     </a> */}
                     <a
-                      href="https://poke-api-sage.vercel.app/"
+                      href="https://ever-sweet.vercel.app/"
                       className="linkBtn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -248,13 +245,13 @@ function GalleryPage() {
                       All about chruch
                     </h2>
                     <p className="pb-3">
-                      Welcome to Poke Guild, your ultimate destination for all
+                      Welcome to Church, your ultimate destination for all
                       things
                     </p>
                     <p>
-                      Pokémon! Dive into a world filled with the charm and
-                      excitement of these iconic creatures, where you can
-                      explore, learn, and build your dream team.
+                      Dive into a world filled with the charm and excitement of
+                      these iconic creatures, where you can explore, learn, and
+                      build your dream team.
                     </p>
                     {/* <a href="/gallery.html" className="btn btn-medium btn-arrow outline-dark position-relative mt-3">
                       <span className="text-uppercase">View more</span>
@@ -263,7 +260,7 @@ function GalleryPage() {
                       </svg>
                     </a> */}
                     <a
-                      href="https://poke-api-sage.vercel.app/"
+                      href="https://www.figma.com/file/UuUEkxGUGcaJl4GhbLhqP3/landing-page?type=design&node-id=0%3A1&mode=design&t=X7tYLrAh3ShvlUJK-1"
                       className="linkBtn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -286,14 +283,6 @@ function GalleryPage() {
             </div>
           </div>
         </section>
-
-
-
-
-
-
-
-
       </body>
     </>
   );

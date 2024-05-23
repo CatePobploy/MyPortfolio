@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* COLOR SHEET: https://tailwindcss.com/docs/customizing-colors */
+/* COLOR SHEET: https://tailwindcss.com/docs/customizing-colors 
+
+*/
+
+@font-face {
+  font-family: 'Game Of Squids';
+  src: url('fonts/Game Of Squids.woff2') format('woff2'),
+       url('fonts/Game Of Squids.woff') format('woff');
+  /* Add additional src lines for other font file formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --primary: #ffffff;
   --secoundery: aliceblue;
